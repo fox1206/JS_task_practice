@@ -32,3 +32,13 @@ let personalMovieDB = {
   genders: [],
   privat: false
 };
+
+let seeLastFilm1 = prompt('Один из последних просмотренных фильмов?', '');
+let score1 = prompt('На сколько оцените его?');
+let seeLastFilm2 = prompt('Один из последних просмотренных фильмов?', '');
+let score2 = prompt('На сколько оцените его?');
+
+personalMovieDB.movies[seeLastFilm1] = score1;
+personalMovieDB.movies[seeLastFilm2] = score2;
+
+console.log(personalMovieDB);
